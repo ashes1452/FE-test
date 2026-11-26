@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>多元宇宙分支追踪器 · TVA</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app">
+        <h1>多元宇宙分支追踪器</h1>
+
+        <!-- 分支输入区 -->
+        <div class="group">
+            <div class="group-row">
+                <input id="branch-id" placeholder="分支编号，如 B-616" />
+                <input id="threshold" type="number" placeholder="熵值阈值" />
+                <button id="spawn">开辟分支</button>
+            </div>
+        </div>
+
+        <!-- 变体输入区 -->
+        <div class="group">
+            <div class="group-row">
+                <input id="v-branch" placeholder="所属分支编号" />
+                <input id="v-name" placeholder="变体名，如:洛基" />
+                <input id="v-chaos" type="number" placeholder="混乱系数" />
+                <button id="add-variant">投放变体</button>
+            </div>
+        </div>
+
+        <!-- 洛基劫持区 -->
+        <div class="group">
+            <div class="group-row">
+                <input id="h-branch" placeholder="分支编号" />
+                <input id="h-number" type="number" placeholder="劫持熵值" />
+                <button id="hijack">洛基劫持</button>
+            </div>
+        </div>
+
+        <!-- 功能区 -->
+        <div class="group">
+            <div class="group-row">
+                <button id="tick">时间推进一格</button>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="group-row">
+                <input id="report-branch" placeholder="查询分支报告..." />
+                <button id="report">查询分支</button>
+            </div>
+        </div>
+
+        <!-- 输出区 -->
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="render.js"></script>
+    <script src="solve.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
